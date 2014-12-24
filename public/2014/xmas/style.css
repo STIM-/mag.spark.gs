@@ -1,0 +1,182 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+	font-size: 16px;
+	font-family: Arial, Verdana, Helvetica, 'Microsoft JhengHei', 新細明體, 'Hiragino Kaku Gothic Pro', 'MS PGothic', sans-serif;
+}
+img {
+	height: auto;
+	max-width: 100%;
+ }
+
+.wrapper {
+	width: 100%;
+}
+.cover {
+	position: relative;
+	width: 100%;
+	height: 450px;
+	max-height: 450px;
+	background-size: cover;
+	background: url(img/string-lights-bokeh-tree.jpg) 50% 0 no-repeat;
+}
+.speck {
+	width: 100%;
+	height: 100%;
+	background:url(img/speck.png) repeat;
+}
+.title {
+	max-width: 450px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -130px; 
+	margin-left: -225px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 2px 5px #000;
+}
+.title h1 {
+	font-size: 3em;
+	font-weight: bold;
+	padding: 10px 0;
+}
+.title p {
+	text-align: left;
+	font-weight: bold;
+	line-height: 1.8;
+}
+
+	.container {
+		max-width: 960px;
+		margin: 30px auto;
+	}
+	.box_4 {
+		position: relative;
+		max-width: 300px;
+	}
+	.box_8 {
+		width: 620px;
+	}
+	.box_4 , .box_8 {
+		display: inline;
+		float: left;
+		margin: 10px 10px 40px;
+	}
+	.landmark {
+		position: absolute;
+		top: -20px;
+		left: -10px;
+		width: 60px;
+		height: 60px;
+		padding-top: 26px;
+		color: #fff;
+		font-weight: bold;
+		text-align: center;
+		background: url(img/landmark.png) no-repeat;
+	}
+	.box_4 img {
+		max-width: 300px;
+		margin-bottom: 15px;
+	}
+	.box_4 h2 , .box_8 h2 {
+		font-size: 1.5em;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	.box_4 p , .box_8 p {
+		line-height: 1.5;
+	}
+	.box_4 p a {
+		color: #0068b7;
+		text-decoration: none;
+	}
+	.box_4 p a:hover {
+		text-decoration: underline;
+	}
+	.author {
+		color: #999;
+		font-size: 0.9em;
+	}
+	.sub-standard {
+		color: #0068b7;
+		font-weight: bold;
+	}
+	.con-2013 {
+		width: 100%;
+		margin: 20px 0 10px;
+	}
+	.con-2013 img {
+		float: left;
+		width: 140px;
+	}
+	.con-2013 .main-con {
+		margin-left: 160px;
+	}
+
+
+h2 a {
+	color: #000;
+	text-decoration: none;
+}
+
+p.author a {
+	color: #999 !important;
+	text-decoration: none;
+}
+
+p.author a:hover {
+	text-decoration: underline;
+}
+
+p a.more {
+	color: #0068b7;
+	text-decoration: none;
+}
