@@ -1,0 +1,277 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: Arial, Verdana, Helvetica, 'Microsoft JhengHei', 新細明體, 'Hiragino Kaku Gothic Pro', 'MS PGothic', sans-serif;
+}
+img {
+    height: auto;
+    max-width: 100%;
+ }
+
+ a {
+    text-decoration: none;
+ }
+
+ .clearfix {
+    clear: both;
+ }
+
+ .header {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    background-size: cover;
+    background: url(img/cover.jpg) center center no-repeat;
+ }
+.inner-header {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    text-indent: -9999px;
+    z-index: 1;
+}
+.inner-header h1 {
+    width: 420px;
+    height: 208px;
+    background: url(img/main_standard.png);
+}
+.inner-header p {
+    width: 420px;
+    height: 103px;
+    background: url(img/describe.png);
+}
+.FB {
+    display: block;
+    text-indent: -9999px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 204px;
+    height: 41px;
+    background: url(img/FB.png);
+    z-index: 99;
+}
+.fog {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 480px;
+    background: url(img/fog.png) repeat-x;
+}
+.cover2 {
+    width: 270px;
+    height: 120px;
+    background: url(img/cover02.png);
+}
+
+.main {
+    max-width: 960px;
+    margin: 20px auto;
+}
+.main h2 {
+    width: 232px;
+    height: 30px;
+    padding: 9px 10px;
+    margin: 0 10px;
+    font-size: 1.3125rem;
+    font-weight: bold;
+    color: #fff;
+    background: url(img/main_title-bg.png) no-repeat;
+}
+.main h2 span {
+    font-size: 1.625rem;
+}
+.main h3 a {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+.col-2 , .col-3 {
+    margin: 20px 0;
+}
+.col-2 article , .col-3 article {
+    float: left;
+    line-height: 1.5;
+}
+.col-2 article {
+    width: 46%;
+    margin: 2%;
+}
+.col-3 article {
+    width: 31%;
+    margin: 1%;
+}
+
+article h4 {
+    text-indent: -9999px;
+}
+article span a {
+    font-size: 0.9rem;
+    color: #999;
+}
+article p a {
+    color: #f39800;
+}
+article p a:hover {
+    text-decoration: underline;
+}
+.article-t1 , .article-t2 , .article-t3 , .article-t4 {
+    width: 100%;
+    height: 40px;
+}
+.article-t1 {
+    background: url(img/article-t1.png) no-repeat;
+}
+.article-t2 {
+    background: url(img/article-t2.png) no-repeat;
+}
+.article-t3 {
+    background: url(img/article-t3.png) no-repeat;
+}
+.article-t4 {
+    background: url(img/article-t4.png) no-repeat;
+}
+
+.photo {
+    margin-top: 10px;
+    position: relative;
+}
+.author-L {
+    position: absolute;
+    bottom: -5px;
+    left: -20px;
+}
+.author-R {
+    position: absolute;
+    bottom: -5px;
+    right: -20px;
+}
+.col-3 article img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-size: 0.9em;
+    border-top: 2px solid #f2f2f2;
+}
+footer a {
+    color: #777;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #0068b7;
+}
+footer .logo {
+    padding: 10px 0;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .author-L {
+        max-width: 120px !important;
+    }
+    .author-R {
+        max-width: 120px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: auto;
+        height: 400px;
+    }
+    .inner-header {
+        top: 15%;
+        left: 50%;
+        margin-left: -160px;
+    }
+    .inner-header h1 {
+        width: 320px;
+        height: 158px;
+        background: url(img/main_standard_320.png);
+    }
+    .inner-header p {
+        width: 320px;
+        height: 78px;
+        background: url(img/describe_320.png);
+    }
+    .main {
+        padding: 0 10px;
+    }
+    .main h2 {
+        margin: 0;
+    }
+    .col-2 article , .col-3 article {
+        width: 100%;
+        max-width: 100%;
+        float: clear;
+        margin: 2% 0 5%;
+    }
+    .col-2 article img , .col-3 article img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .author-L {
+        max-width: 120px !important;
+        bottom: 0;
+    }
+    .author-R {
+        max-width: 120px !important;
+        bottom: 0;
+    }
+}
